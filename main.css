@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color:white;
+    --bg-color-1:white;
+    --text-color:#111517;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.dark {
+    --bg-color:#202C36;
+    --bg-color-1:#2B3844;
+    --text-color:white;
+}
+nav {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+.container {
+    max-width: 1110px;
+    margin: 0px auto;
+}
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    img {
+        width: 300px;
+    }
+}
+.i {
+    position: relative;
+    right: -260px;
+}
+.i-one {
+    position: relative;
+    left: -25px;
+    top: -15px;
+    color: orange;
+} 
+#input {
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+#input:focus {
+    border-color: #007bff;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+    transform: translateY(-2px);
+}
+.card {
+    background-color: var(--bg-color-1);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 2px 9px 0px rgb(98, 97, 97);
+    h2 {
+        margin: 20px;
+    }
+    p {
+        margin-left: 20px;
+    }
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(247, 247, 247);
+    height: 100px;
+    padding: 15px;
+    border-radius: 50px;
+    button {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: white;
+        border: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    .top {
+        border-color: #007bff;
+        box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+        position: relative;
+        top: -10px;
+    }
+    button:active {
+        border-color: #007bff;
+        box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+        position: relative;
+        top: -10px;
+    }
+}
